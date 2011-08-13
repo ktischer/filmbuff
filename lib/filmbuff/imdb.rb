@@ -6,7 +6,7 @@ module FilmBuff
     include HTTParty::Icebox
     cache :store => 'memory', :timeout => 120
 
-    base_uri 'app.imdb.com'
+    base_uri 'https://app.imdb.com'
     default_params = {
       "api" => "v1",
       "app_id" => "iphone1_1",
