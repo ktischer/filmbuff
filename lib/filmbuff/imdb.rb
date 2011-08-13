@@ -14,8 +14,8 @@ module FilmBuff
       "sig" => "app1_1"
     }
 
-    def initialize
-      @locale = "en_US"
+    def initialize(options = {})
+      @locale = options[:locale] ||= "en_US"
     end
 
     public
