@@ -46,7 +46,7 @@ You can then find a movie by its title. This will return the first result from I
     
     movie.title => "The Wizard of Oz"
     movie.rating => 8.3
-    movie.genres => ["Adventure", "Comedy", "Family", "Fantasy", "Musical"]
+    movie.genres => ["Adventure", "Family", "Fantasy", "Musical"]
 
 If you know the movie's IMDb ID you can get the information as well:
 
@@ -54,16 +54,16 @@ If you know the movie's IMDb ID you can get the information as well:
     
     movie.title => "The Wizard of Oz"
     movie.rating => 8.3
-    movie.genres => ["Adventure", "Comedy", "Family", "Fantasy", "Musical"]
+    movie.genres => ["Adventure", "Family", "Fantasy", "Musical"]
 
 To retrieve information in a different language, set the instance variable locale to your wanted locale:
 
     imdb.locale = "de_DE"
     movie = imdb.find_by_id("tt0032138")
     
-    movie.title => "Das zauberhafte Land"
+    movie.title => "Der Zauberer von Oz"
     movie.rating => 8.3
-    movie.genres => ["Abenteuer", "Komödie", "Familie", "Fantasy", "Musical"]
+    movie.genres => ["Abenteuer", "Familie", "Fantasy", "Musical"]
 
 Supported locales are
 
