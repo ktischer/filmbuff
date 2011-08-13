@@ -27,7 +27,7 @@ module FilmBuff
     end
 
     def find_by_title(title)
-      results = self.class.get('/find', :query => {
+      results = self.class.get_without_caching('/find', :query => {
         :q => title, :locale => @locale
       }).parsed_response
       find_by_id(results["data"]["results"][0]["list"][0]["tconst"])
